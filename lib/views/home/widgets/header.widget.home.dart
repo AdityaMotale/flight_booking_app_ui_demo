@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../design/design_colors.dart';
 import '../data_modals/airport_dm.home.dart';
 
 class HeaderWidgetHome extends StatelessWidget {
@@ -12,7 +13,7 @@ class HeaderWidgetHome extends StatelessWidget {
   final subtitleStyle = const TextStyle(
     fontSize: 14,
     height: 1.16,
-    color: Color(0xff909090),
+    color: UDesignColors.secondary,
   );
 
   @override
@@ -26,6 +27,7 @@ class HeaderWidgetHome extends StatelessWidget {
             fontWeight: FontWeight.w600,
             fontSize: 20,
             height: 1.2,
+            color: UDesignColors.primary,
           ),
         ),
         const SizedBox(height: 10),
