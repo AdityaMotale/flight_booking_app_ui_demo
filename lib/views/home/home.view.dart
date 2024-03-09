@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 
 import 'widgets/airport_details_card.widget.home.dart';
+import 'widgets/chip_menu.widget.home.dart';
 import 'widgets/header.widget.home.dart';
 
-class HomeView extends StatelessWidget {
+class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);
 
+  @override
+  State<HomeView> createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
@@ -18,7 +24,9 @@ class HomeView extends StatelessWidget {
               children: [
                 HeaderWidgetHome(),
                 SizedBox(height: 20),
-                AirportDetailsCardWidgetHome()
+                AirportDetailsCardWidgetHome(),
+                SizedBox(height: 20),
+                ChipMenuWidgetHome(),
               ],
             ),
           ),

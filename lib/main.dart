@@ -1,8 +1,12 @@
+import 'package:ecko/ecko.dart';
 import 'package:flutter/material.dart';
 
 import 'views/home/home.view.dart';
 
 void main() {
+  // initialising the ecko lib for state management
+  Ecko.init(printLogs: true);
+
   runApp(const MyApp());
 }
 
