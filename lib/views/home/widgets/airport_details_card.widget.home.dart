@@ -87,7 +87,7 @@ class AirportDetailsCardWidgetHome extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            SvgPicture.asset("assets/icons/direction_icon.svg"),
+                            SvgPicture.asset("assets/icons/direction_icon_blue.svg"),
                             const SizedBox(width: 10),
                             const Text(
                               "Get direction",
@@ -110,7 +110,7 @@ class AirportDetailsCardWidgetHome extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          SvgPicture.asset("assets/icons/call_icon.svg"),
+                          SvgPicture.asset("assets/icons/call_icon_blue.svg"),
                           const SizedBox(width: 10),
                           const Text(
                             "Call airport",

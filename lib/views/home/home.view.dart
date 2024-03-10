@@ -1,3 +1,4 @@
+import 'widgets/transport_details_card.widget.home.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/airport_details_card.widget.home.dart';
@@ -30,6 +31,9 @@ class _HomeViewState extends State<HomeView> {
                 ChipMenuWidgetHome(),
                 SizedBox(height: 20),
                 TaxiServiceWidgetHome(),
+                SizedBox(height: 20),
+                TransportDetailsCardWidgetHome(),
+                SizedBox(height: 100),
               ],
             ),
           ),

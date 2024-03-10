@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>0EFFB2C6-020A-4C03-B185-5BC36A10CD85</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="airport" transform="translate(-300.000000, -1739.000000)" fill="#080808" fill-rule="nonzero">
+            <g id="Group-12" transform="translate(20.000000, 1674.000000)">
+                <g id="Group-5" transform="translate(20.000000, 20.000000)">
+                    <g id="Group-8" transform="translate(0.000000, 36.000000)">
+                        <g id="Group-14" transform="translate(245.000000, 0.000000)">
+                            <path d="M18.62,16.79 C20.06,19.62 22.38,21.93 25.21,23.38 L27.41,21.18 C27.68,20.91 28.08,20.82 28.43,20.94 C29.55,21.31 30.76,21.51 32,21.51 C32.55,21.51 33,21.96 33,22.51 L33,26 C33,26.55 32.55,27 32,27 C22.61,27 15,19.39 15,10 C15,9.45 15.45,9 16,9 L19.5,9 C20.05,9 20.5,9.45 20.5,10 C20.5,11.25 20.7,12.45 21.07,13.57 C21.18,13.92 21.1,14.31 20.82,14.59 L18.62,16.79 Z" id="call"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
