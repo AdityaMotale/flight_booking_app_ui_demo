@@ -1,7 +1,7 @@
 import 'package:ecko/ecko.dart';
 import 'package:flutter/material.dart';
 
-import 'views/Profile/profile.view.dart';
+import 'views/home/home.view.dart';
 
 void main() {
   // initialising the ecko lib for state management
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ProfileView(),
+      home: const HomeView(),
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../design/design_colors.dart';
+import '../Profile/profile.view.dart';
 import 'controller/home_controller.dart';
 import 'widgets/airport_details_card.widget.home.dart';
 import 'widgets/chip_menu.widget.home.dart';
@@ -83,7 +84,12 @@ class _BottomActions extends StatelessWidget {
       children: [
         Expanded(
           child: InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProfileView()),
+              );
+            },
             child: Container(
               padding: const EdgeInsets.symmetric(vertical: 15),
               decoration: BoxDecoration(
@@ -111,7 +117,12 @@ class _BottomActions extends StatelessWidget {
         const SizedBox(width: 20),
         Expanded(
           child: InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProfileView()),
+              );
+            },
             child: Container(
               padding: const EdgeInsets.symmetric(vertical: 15),
               decoration: BoxDecoration(
