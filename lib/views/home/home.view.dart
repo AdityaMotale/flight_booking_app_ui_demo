@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'widgets/airport_details_card.widget.home.dart';
 import 'widgets/chip_menu.widget.home.dart';
+import 'widgets/forex_details_card.widget.home.dart';
 import 'widgets/header.widget.home.dart';
 import 'widgets/parking_details_card.widget.home.dart';
 import 'widgets/taxi_service_card.widget.home.dart';
@@ -39,6 +40,8 @@ class _HomeViewState extends State<HomeView> {
                 SelfParkingDetailsCardWidgetHome(),
                 SizedBox(height: 20),
                 TerminalDetailsCardWidgetHome(),
+                SizedBox(height: 20),
+                ForexDetailsCardWidgetHome(),
                 SizedBox(height: 100),
               ],
             ),
