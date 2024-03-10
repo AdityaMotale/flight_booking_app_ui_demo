@@ -1,3 +1,4 @@
+import 'package:flight_booking_app/views/home/widgets/contact_details_card.widget.home.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/airport_details_card.widget.home.dart';
@@ -42,6 +43,8 @@ class _HomeViewState extends State<HomeView> {
                 TerminalDetailsCardWidgetHome(),
                 SizedBox(height: 20),
                 ForexDetailsCardWidgetHome(),
+                SizedBox(height: 20),
+                ContactInfoDetailsCardWidgetHome(),
                 SizedBox(height: 100),
               ],
             ),
