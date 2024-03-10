@@ -74,6 +74,12 @@ class _HomeViewState extends State<HomeView> {
   }
 }
 
+///
+/// A widget representing the bottom navigation buttons on the `Home` view
+///
+/// Note: The widget is extracted from the UI to keep the widget tree clean
+/// and easy to debug. Fallowing the separation of concerns philosophy
+///
 class _BottomActions extends StatelessWidget {
   const _BottomActions();
 

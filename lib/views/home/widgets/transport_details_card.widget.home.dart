@@ -104,6 +104,9 @@ class TransportDetailsCardWidgetHome extends StatelessWidget {
   }
 }
 
+///
+/// A constant list of available transport services
+///
 const List<_TransportServiceDto> _transportItems = [
   _TransportServiceDto(
     icon: "metro_icon_dark.svg",
@@ -117,6 +120,9 @@ const List<_TransportServiceDto> _transportItems = [
   ),
 ];
 
+///
+/// A dtp to represent the transport service available at the airport
+///
 class _TransportServiceDto {
   final String icon;
   final String title;

@@ -107,6 +107,9 @@ class TaxiServiceWidgetHome extends StatelessWidget {
   }
 }
 
+///
+/// A constant list of available taxi service providers
+///
 const List<_TaxiServiceProviderDto> _serviceProviders = [
   _TaxiServiceProviderDto(logo: "uber.png", luxuryRating: 4),
   _TaxiServiceProviderDto(logo: "careem.png", luxuryRating: 4),
@@ -114,6 +117,9 @@ const List<_TaxiServiceProviderDto> _serviceProviders = [
   _TaxiServiceProviderDto(logo: "blacklane.png", luxuryRating: 5),
 ];
 
+///
+/// A dto class to represent a taxi service
+///
 class _TaxiServiceProviderDto {
   final String logo;
   final int luxuryRating;

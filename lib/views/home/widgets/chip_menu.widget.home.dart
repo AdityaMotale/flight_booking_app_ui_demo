@@ -81,6 +81,9 @@ class _ChipMenuWidgetHomeState extends State<ChipMenuWidgetHome> {
   }
 }
 
+///
+/// A constant list of available chips in chip menu
+///
 final List<_ChipMenuItemDto> _chipMenuItems = [
   _ChipMenuItemDto(
     title: "Transport",
@@ -100,6 +103,9 @@ final List<_ChipMenuItemDto> _chipMenuItems = [
   ),
 ];
 
+///
+/// A dto class to represent item in chip menu for easy navigation
+///
 class _ChipMenuItemDto {
   final String title;
   final GlobalKey key;

@@ -105,12 +105,18 @@ class _ForexDetailsCardWidgetHomeState
   }
 }
 
+///
+/// A constant list of available forex exchanges available
+///
 const List<_ForexExchangeDto> _forexExchangesList = [
   _ForexExchangeDto(index: 0, title: "Travelex"),
   _ForexExchangeDto(index: 1, title: "Al Ansari Exchange"),
   _ForexExchangeDto(index: 2, title: "Emirates NBD"),
 ];
 
+///
+/// A dto class to represent a forex exchange service
+///
 class _ForexExchangeDto {
   final int index;
   final String title;

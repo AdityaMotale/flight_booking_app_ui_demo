@@ -153,6 +153,9 @@ class _SelfParkingDetailsCardWidgetHomeState
   }
 }
 
+///
+/// A Constant list of available parking types at the airport
+///
 const List<_ParkingVehicleDto> _parkingItems = [
   _ParkingVehicleDto(
     icon: "two_wheeler_icon_dark.svg",
@@ -171,6 +174,9 @@ const List<_ParkingVehicleDto> _parkingItems = [
   ),
 ];
 
+///
+/// A dto class to represent a parking type
+///
 class _ParkingVehicleDto {
   final String icon;
   final String title;

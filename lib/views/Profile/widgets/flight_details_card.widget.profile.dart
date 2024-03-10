@@ -63,7 +63,7 @@ class FlightDetailsCardWidgetProfile extends StatelessWidget {
           SizedBox(
             width: MediaQuery.of(context).size.width,
             child: CustomPaint(
-              painter: CustomDashedBorderPainter(),
+              painter: _CustomDashedBorderPainter(),
             ),
           ),
           const SizedBox(height: 15),
@@ -144,7 +144,14 @@ class FlightDetailsCardWidgetProfile extends StatelessWidget {
   }
 }
 
-class CustomDashedBorderPainter extends CustomPainter {
+///
+/// Widget representing dashed line created using the `CustomPainter` widget
+///
+/// Note: The scope of the widget is kept local because its currently not being
+/// used anywhere else in the code. If its used it should be kept in its own
+/// file under global widgets
+///
+class _CustomDashedBorderPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     Paint paint = Paint()

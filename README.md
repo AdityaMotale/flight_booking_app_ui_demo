@@ -1,16 +1,19 @@
 # flight_booking_app
 
-A new Flutter project.
+A demo UI build for a flight booking app.
 
-## Getting Started
+### Docs
 
-This project is a starting point for a Flutter application.
+The UI contains two screens / views
 
-A few resources to get you started if this is your first Flutter project:
+- Home UI (Default)
+- Profile UI
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Note: To navigate to `ProfileView`, you can press on any of the two available buttons in the bottom of the `HomeView`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Nomenclature
+
+DM - A data model class containing the raw data
+DTO - A data transfer object used for data modeling
+View - A widget representing a single page or screen in the app
+Controller - A class containing the business logic, its used to separate the business logic from the UI
