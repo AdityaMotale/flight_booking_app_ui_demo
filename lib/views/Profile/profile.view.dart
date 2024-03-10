@@ -1,3 +1,4 @@
+import 'package:flight_booking_app/views/Profile/widgets/flight_details_card.widget.profile.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/header_card.widgets.profile.dart';
@@ -21,7 +22,7 @@ class ProfileView extends StatelessWidget {
                   children: [
                     UsersFlightsWidgetProfile(),
                     SizedBox(height: 20),
-                    
+                    FlightDetailsCardWidgetProfile(),
                     SizedBox(height: 20),
                   ],
                 ),
@@ -33,4 +34,3 @@ class ProfileView extends StatelessWidget {
     );
   }
 }
-
