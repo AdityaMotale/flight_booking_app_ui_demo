@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'widgets/airport_details_card.widget.home.dart';
 import 'widgets/chip_menu.widget.home.dart';
 import 'widgets/header.widget.home.dart';
+import 'widgets/taxi_service_card.widget.home.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -27,6 +28,8 @@ class _HomeViewState extends State<HomeView> {
                 AirportDetailsCardWidgetHome(),
                 SizedBox(height: 20),
                 ChipMenuWidgetHome(),
+                SizedBox(height: 20),
+                TaxiServiceWidgetHome(),
               ],
             ),
           ),
