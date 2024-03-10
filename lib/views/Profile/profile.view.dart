@@ -1,6 +1,8 @@
-import 'package:flight_booking_app/views/Profile/widgets/flight_details_card.widget.profile.dart';
 import 'package:flutter/material.dart';
 
+import '../../design/design_colors.dart';
+import 'widgets/boarding_details_card.widget.profile.dart';
+import 'widgets/flight_details_card.widget.profile.dart';
 import 'widgets/header_card.widgets.profile.dart';
 import 'widgets/users_flights.widget.profile.dart';
 
@@ -21,6 +23,12 @@ class ProfileView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     UsersFlightsWidgetProfile(),
+                    SizedBox(height: 20),
+                    FlightDetailsCardWidgetProfile(),
+                    SizedBox(height: 20),
+                    BoardingDetailsCardWidgetProfile(),
+                    SizedBox(height: 20),
+                    Divider(thickness: 2.5, color: UDesignColors.border),
                     SizedBox(height: 20),
                     FlightDetailsCardWidgetProfile(),
                     SizedBox(height: 20),
