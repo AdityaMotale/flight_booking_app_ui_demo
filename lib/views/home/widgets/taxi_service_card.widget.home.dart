@@ -33,7 +33,7 @@ class TaxiServiceWidgetHome extends StatelessWidget {
               children: [
                 for (_TaxiServiceProviderDto dto in _serviceProviders)
                   Container(
-                    width: MediaQuery.of(context).size.width * 0.25,
+                    width: MediaQuery.of(context).size.width * 0.24,
                     padding: const EdgeInsets.symmetric(horizontal: 15),
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -48,8 +48,8 @@ class TaxiServiceWidgetHome extends StatelessWidget {
                         dto.luxuryRating == 5
                             ? Container(
                                 padding: const EdgeInsets.symmetric(
-                                  horizontal: 12,
-                                  vertical: 2,
+                                  horizontal: 10,
+                                  vertical: 1.5,
                                 ),
                                 margin: const EdgeInsets.only(bottom: 5),
                                 decoration: const BoxDecoration(
