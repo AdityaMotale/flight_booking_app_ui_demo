@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../design/design_colors.dart';
+import '../controller/home_controller.dart';
 
 class ForexDetailsCardWidgetHome extends StatefulWidget {
   const ForexDetailsCardWidgetHome({Key? key}) : super(key: key);
@@ -26,6 +27,7 @@ class _ForexDetailsCardWidgetHomeState
   @override
   Widget build(BuildContext context) {
     return Container(
+      key: HomeController().forexCardKey,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         border: Border.all(color: UDesignColors.border),

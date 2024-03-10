@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../design/design_colors.dart';
+import '../controller/home_controller.dart';
 
 class ContactInfoDetailsCardWidgetHome extends StatelessWidget {
   const ContactInfoDetailsCardWidgetHome({Key? key}) : super(key: key);
@@ -9,6 +10,7 @@ class ContactInfoDetailsCardWidgetHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      key: HomeController().contactCardKey,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         border: Border.all(color: UDesignColors.border),

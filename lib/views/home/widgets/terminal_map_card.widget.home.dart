@@ -2,6 +2,7 @@ import 'package:ecko/ecko.dart';
 import 'package:flutter/material.dart';
 
 import '../../../design/design_colors.dart';
+import '../controller/home_controller.dart';
 
 class TerminalDetailsCardWidgetHome extends StatefulWidget {
   const TerminalDetailsCardWidgetHome({Key? key}) : super(key: key);
@@ -25,6 +26,7 @@ class _TerminalDetailsCardWidgetHomeState
   @override
   Widget build(BuildContext context) {
     return Container(
+      key: HomeController().terminalCardKey,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         border: Border.all(color: UDesignColors.border),

@@ -2,9 +2,12 @@ import 'package:ecko/ecko.dart';
 import 'package:flutter/material.dart';
 
 import '../../../design/design_colors.dart';
+import '../controller/home_controller.dart';
 
 class ChipMenuWidgetHome extends StatefulWidget {
-  const ChipMenuWidgetHome({super.key});
+  const ChipMenuWidgetHome({required this.scrollController, super.key});
+
+  final ScrollController scrollController;
 
   @override
   State<ChipMenuWidgetHome> createState() => _ChipMenuWidgetHomeState();
@@ -12,6 +15,14 @@ class ChipMenuWidgetHome extends StatefulWidget {
 
 class _ChipMenuWidgetHomeState extends State<ChipMenuWidgetHome> {
   final selectedIndex = Store(0);
+
+  @override
+  void dispose() {
+    selectedIndex.dispose();
+    widget.scrollController.dispose();
+
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +38,17 @@ class _ChipMenuWidgetHomeState extends State<ChipMenuWidgetHome> {
               return InkWell(
                 onTap: () {
                   selectedIndex.set(index);
+                  widget.scrollController.animateTo(
+                    _chipMenuItems[index]
+                            .key
+                            .currentContext!
+                            .findRenderObject()!
+                            .semanticBounds
+                            .bottom +
+                        500,
+                    duration: const Duration(milliseconds: 200),
+                    curve: Curves.easeIn,
+                  );
                 },
                 child: Container(
                   padding: const EdgeInsets.symmetric(
@@ -41,7 +63,7 @@ class _ChipMenuWidgetHomeState extends State<ChipMenuWidgetHome> {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(
-                    _chipMenuItems[index],
+                    _chipMenuItems[index].title,
                     style: TextStyle(
                       fontSize: 12,
                       height: 1.2,
@@ -59,9 +81,28 @@ class _ChipMenuWidgetHomeState extends State<ChipMenuWidgetHome> {
   }
 }
 
-const List<String> _chipMenuItems = [
-  "Transport",
-  "Terminal",
-  "Forex",
-  "Contact info",
+final List<_ChipMenuItemDto> _chipMenuItems = [
+  _ChipMenuItemDto(
+    title: "Transport",
+    key: HomeController().transportCardKey,
+  ),
+  _ChipMenuItemDto(
+    title: "Terminal",
+    key: HomeController().terminalCardKey,
+  ),
+  _ChipMenuItemDto(
+    title: "Forex",
+    key: HomeController().forexCardKey,
+  ),
+  _ChipMenuItemDto(
+    title: "Contact info",
+    key: HomeController().contactCardKey,
+  ),
 ];
+
+class _ChipMenuItemDto {
+  final String title;
+  final GlobalKey key;
+
+  const _ChipMenuItemDto({required this.title, required this.key});
+}
