@@ -5,6 +5,7 @@ import 'widgets/chip_menu.widget.home.dart';
 import 'widgets/header.widget.home.dart';
 import 'widgets/parking_details_card.widget.home.dart';
 import 'widgets/taxi_service_card.widget.home.dart';
+import 'widgets/terminal_map_card.widget.home.dart';
 import 'widgets/transport_details_card.widget.home.dart';
 
 class HomeView extends StatefulWidget {
@@ -36,6 +37,8 @@ class _HomeViewState extends State<HomeView> {
                 TransportDetailsCardWidgetHome(),
                 SizedBox(height: 20),
                 SelfParkingDetailsCardWidgetHome(),
+                SizedBox(height: 20),
+                TerminalDetailsCardWidgetHome(),
                 SizedBox(height: 100),
               ],
             ),
